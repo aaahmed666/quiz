@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import Section0 from "./components/Section0";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
@@ -8,11 +9,12 @@ import { useTranslation } from "react-i18next";
 
 function App() {
   const [t, i18n] = useTranslation();
+
+  const [currentSection, setCurrentSection] = useState(0);
+
   const [businessModel, setBusinessModel] = useState(false);
   const [agebracket, setAgeBracket] = useState(false);
   const [industries, setIndustries] = useState(false);
-
-  const [currentSection, setCurrentSection] = useState(0);
 
   const [investment, setInvestment] = useState(false);
   const [investmentValue, setInvestmentValue] = useState(false);
@@ -72,6 +74,7 @@ function App() {
         setError(error.message);
       }
     };
+
     fetchPostData();
   };
 
@@ -101,14 +104,10 @@ function App() {
       </div>
       <div className="app">
         <form onSubmit={submitHandle}>
-          {currentSection === 0 && (
-            <Button
-              varient="primary"
-              type="button"
-              onClick={() => setCurrentSection(1)}>
-              {t("start")}
-            </Button>
-          )}
+          <Section0
+            setCurrentSection={setCurrentSection}
+            currentSection={currentSection}
+          />
 
           <Section1
             businessModel={businessModel}
