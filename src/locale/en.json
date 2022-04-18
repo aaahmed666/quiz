@@ -1,0 +1,13 @@
+{
+  "start": "Generate Business Plan",
+  "q1": "Is your business model B2C or B2B or Both?",
+  "q2": "Do you target all age bracket?",
+  "q3": "Do you target all industries?",
+  "q4": "Did you have an investment?",
+  "q5": "How much was the investment?",
+  "a1": "Yes",
+  "a2": "No",
+  "next": "Next",
+  "submit": "Submit",
+  "success": "You answers are submitted successfully"
+}
