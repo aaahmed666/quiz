@@ -17,7 +17,7 @@ function App() {
   const [industries, setIndustries] = useState(false);
 
   const [investment, setInvestment] = useState(false);
-  const [investmentValue, setInvestmentValue] = useState(false);
+  const [investmentValue, setInvestmentValue] = useState("");
 
   const [error, setError] = useState(null);
 

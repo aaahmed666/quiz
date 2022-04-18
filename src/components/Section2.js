@@ -11,7 +11,7 @@ const Section2 = ({
   error,
 }) => {
   const [t] = useTranslation();
-
+  console.log(investmentValue);
   return (
     <>
       {currentSection === 2 && (
