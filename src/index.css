@@ -19,6 +19,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  padding: 20px;
+}
+
 .navbar {
   justify-content: flex-end;
 }

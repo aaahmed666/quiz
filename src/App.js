@@ -76,7 +76,7 @@ function App() {
   };
 
   return (
-    <div>
+    <main>
       <div className="navbar">
         <ul>
           {i18n.language === "en" && (
@@ -133,7 +133,7 @@ function App() {
           <Section3 currentSection={currentSection} />
         </form>
       </div>
-    </div>
+    </main>
   );
 }
 
